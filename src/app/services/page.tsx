@@ -9,11 +9,12 @@ import AnimatedWebApps from '@/components/icons/AnimatedWebApps';
 import AnimatedWorkflow from '@/components/icons/AnimatedWorkflow';
 import AnimatedStrategy from '@/components/icons/AnimatedStrategy';
 import AnimatedSecurity from '@/components/icons/AnimatedSecurity';
+import AnimatedAI from '@/components/icons/AnimatedAI';
 import { services } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Services',
-  description: 'Comprehensive technology services for growing SMEs: IT infrastructure, web management, workflow automation, technology strategy, and security.',
+  description: 'Comprehensive technology services for growing SMEs: IT infrastructure, web management, workflow automation, technology strategy, security, and AI adoption.',
 };
 
 const animatedIconMap: Record<string, React.ComponentType> = {
@@ -22,6 +23,7 @@ const animatedIconMap: Record<string, React.ComponentType> = {
   Zap: AnimatedWorkflow,
   TrendingUp: AnimatedStrategy,
   Shield: AnimatedSecurity,
+  Brain: AnimatedAI,
 };
 
 export default function ServicesPage() {

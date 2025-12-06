@@ -92,6 +92,33 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: 'ai-adoption',
+    title: 'AI Adoption & Integration',
+    shortDescription: 'Leverage artificial intelligence to boost productivity, enhance decision-making, and gain competitive advantage in your industry.',
+    icon: 'Brain',
+    features: [
+      'AI readiness assessment',
+      'Generative AI implementation (ChatGPT, Claude, etc.)',
+      'Business process optimization with AI',
+      'AI-powered analytics and insights',
+      'Employee training and change management',
+      'Custom AI solutions and integrations',
+    ],
+    detailedDescription: 'AI is no longer a future trend—it\'s changing how businesses operate today. We help SMEs understand AI\'s potential, identify high-impact opportunities, and implement practical AI solutions that boost productivity, reduce costs, and increase competitiveness. From automating routine tasks to generating insights from your data, AI can transform how your business works.',
+    process: [
+      'Assess your business processes and identify AI opportunities',
+      'Develop an AI adoption strategy aligned with your goals',
+      'Implement AI tools and integrations into your workflows',
+      'Train your team and drive organizational adoption',
+    ],
+    deliverables: [
+      'AI opportunity assessment and roadmap',
+      'Implemented AI tools and integrations',
+      'Employee training and best practices guide',
+      'Performance tracking and optimization recommendations',
+    ],
+  },
+  {
     slug: 'technology-strategy',
     title: 'Technology Strategy & Consulting',
     shortDescription: 'Strategic technology guidance to align your tech stack with business goals and plan for growth.',

@@ -7,6 +7,7 @@ import AnimatedWebApps from '@/components/icons/AnimatedWebApps';
 import AnimatedWorkflow from '@/components/icons/AnimatedWorkflow';
 import AnimatedStrategy from '@/components/icons/AnimatedStrategy';
 import AnimatedSecurity from '@/components/icons/AnimatedSecurity';
+import AnimatedAI from '@/components/icons/AnimatedAI';
 import { services } from '@/data/services';
 
 const animatedIconMap: Record<string, React.ComponentType> = {
@@ -15,6 +16,7 @@ const animatedIconMap: Record<string, React.ComponentType> = {
   Zap: AnimatedWorkflow,
   TrendingUp: AnimatedStrategy,
   Shield: AnimatedSecurity,
+  Brain: AnimatedAI,
 };
 
 export default function ServicesOverview() {
