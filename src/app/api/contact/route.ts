@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server';
 import formData from 'form-data';
 import Mailgun from 'mailgun.js';
 
+// Configure Edge Runtime for Cloudflare Pages
+export const runtime = 'edge';
+
 // Initialize Mailgun
 const mailgun = new Mailgun(formData);
 const mg = process.env.MAILGUN_API_KEY && process.env.MAILGUN_DOMAIN
