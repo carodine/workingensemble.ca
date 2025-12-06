@@ -8,9 +8,9 @@ import Button from '@/components/shared/Button';
 import { getCaseStudyBySlug, caseStudies } from '@/data/case-studies';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -20,7 +20,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const study = getCaseStudyBySlug(params.slug);
+  const { slug } = await params;
+  const study = getCaseStudyBySlug(slug);
 
   if (!study) {
     return {
@@ -34,8 +35,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function CaseStudyPage({ params }: PageProps) {
-  const study = getCaseStudyBySlug(params.slug);
+export default async function CaseStudyPage({ params }: PageProps) {
+  const { slug } = await params;
+  const study = getCaseStudyBySlug(slug);
 
   if (!study) {
     notFound();
