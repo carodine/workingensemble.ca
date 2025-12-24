@@ -74,6 +74,34 @@ export const caseStudies: CaseStudy[] = [
       role: 'Hospitality Group',
     },
   },
+  {
+    slug: 'saas-sales-deal-calculator',
+    title: 'Automated Deal Calculator & Approval Workflow for SaaS Sales Team',
+    client: 'SaaS Company, Toronto',
+    industry: 'Technology / SaaS',
+    excerpt: 'Developed a custom Google Apps Script Web App to validate deal financials, automate approvals, and generate pre-quotes, ensuring only healthy deals reach the CRM.',
+    challenge: 'The sales team struggled with complex manual calculations for deal profitability, inconsistent pricing logic, and a lack of guardrails before entering data into the CRM. This led to errors, unprofitable deals being quoted, and significant time wasted on manual reviews.',
+    solution: 'We built a custom Google Script Web App that acts as a pre-sales simulator. It calculates financial health metrics based on one-time and recurring revenue against variable customer acquisition costs (CAC) derived from lead source and type. The tool provides a Red/Yellow/Green deal health status, routes for manual approval, and generates a PDF pre-quote.',
+    results: [
+      'Improved overall deal quality and margins',
+      'Reduced time-to-quote by automating calculations',
+      'Ensured only pre-approved quotes enter the CRM',
+      'Standardized pricing logic across the sales team',
+      'Streamlined approval process for complex deals',
+    ],
+    services: [
+      'Custom Web App Development (Google Apps Script)',
+      'Workflow Automation',
+      'Financial Modeling',
+      'PDF Generation Automation',
+      'Sales Operations Optimization',
+    ],
+    testimonial: {
+      quote: 'This tool has been a game-changer for our sales team. We no longer worry about the math behind the deals, and the automatic PDF generation saves us hours every week. The quality of deals entering our pipeline has never been higher.',
+      author: 'VP of Sales',
+      role: 'SaaS Company, Toronto',
+    },
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
