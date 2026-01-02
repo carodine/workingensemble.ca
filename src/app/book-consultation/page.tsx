@@ -109,44 +109,21 @@ export default function BookConsultationPage() {
               Schedule Your Tech Review
             </h2>
             <p className="text-center text-neutral-600 mb-8">
-              Use the form below to book your consultation. We'll send you a calendar invite with a video call link.
+              Use the calendar below to book your consultation directly. You'll receive an invite with a video call link.
             </p>
 
-            {/* Google Calendar Embed Placeholder */}
+            {/* Google Calendar Embed */}
             <FadeIn delay={0} direction="up" fullWidth>
-              <Card className="bg-white">
-                <div className="text-center py-12">
-                  <div className="w-20 h-20 rounded-full bg-primary-100 flex items-center justify-center mx-auto mb-4">
-                    <svg
-                      className="w-10 h-10 text-primary-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="font-heading font-semibold text-xl text-neutral-900 mb-2">
-                    Google Calendar Integration
-                  </h3>
-                  <p className="text-neutral-600 mb-6 max-w-md mx-auto">
-                    To complete the booking integration, you'll need to:
-                  </p>
-                  <ol className="text-left max-w-md mx-auto space-y-2 mb-6 text-neutral-700">
-                    <li>1. Set up Google Calendar appointment scheduling in your Google Workspace</li>
-                    <li>2. Configure a 30-minute "Free Tech Review" appointment type</li>
-                    <li>3. Get the embeddable calendar link</li>
-                    <li>4. Replace this placeholder with the iframe embed code</li>
-                  </ol>
-                  <p className="text-sm text-neutral-500 italic">
-                    For now, users can contact you via the form below
-                  </p>
-                </div>
+              <Card className="bg-white overflow-hidden">
+                {/* Google Calendar Appointment Scheduling begin */}
+                <iframe
+                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0KcTXWxvgzZlYZ_kBFTZ3zBPMZLkefPbowsqqEqPUiAM62u5-Z3DRP4Klf1DeDoQSucpt6fsMk?gv=true"
+                  style={{ border: 0 }}
+                  width="100%"
+                  height="750"
+                  frameBorder="0"
+                ></iframe>
+                {/* end Google Calendar Appointment Scheduling */}
               </Card>
             </FadeIn>
           </div>
