@@ -77,7 +77,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-1">Location</h3>
                     <p className="text-neutral-700">
-                      {SITE_CONFIG.address.street}<br />
+                      {/* {SITE_CONFIG.address.street}<br /> */}
                       {SITE_CONFIG.address.city}, {SITE_CONFIG.address.province}<br />
                       {SITE_CONFIG.address.country}
                     </p>
